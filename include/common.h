@@ -11,6 +11,7 @@ void io_store_eflags(int eflags);
 void init_palette(void); 
 void set_palette(int start, int end, unsigned char *rgb); 
 void boxfill8(unsigned char *vram, int xsize, unsigned char c, int x0, int y0, int x1, int y1); 
+void picfill8(unsigned char *vram, unsigned int xsize, unsigned int ysize, unsigned int x1, unsigned int y1, unsigned char *pic, unsigned int width, unsigned int height);
  
 void putfont8(char *vram, int xsize, int x, int y, char c, const unsigned char *font);
 void putfont8_string(char *vram, int xsize, int x, int y, char color,const unsigned char *font_bitmap, char * string);
